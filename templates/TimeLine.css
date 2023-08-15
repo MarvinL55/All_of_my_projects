@@ -1,0 +1,37 @@
+#timeline-container {
+    width: 100%;
+}
+
+#timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline-event {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.timeline-event:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000;
+}
+
+
+#slideshow-container {
+    display: none;
+}
+
+.title{
+text-align:center;
+}

@@ -1,0 +1,7 @@
+language: en
+pipeline:
+- name: WhitespaceTokenizer
+- name: CRFEntityExtractor
+- name: DIETClassifier
+- name: EntitySynonymMapper
+assistant_id: 20230628-180744-proper-tanker

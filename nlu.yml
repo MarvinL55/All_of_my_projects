@@ -1,0 +1,23 @@
+nlu:
+- intent: hi
+  examples: |
+    - hello
+    - Hi
+    - hey
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+
+- intent: weather
+  examples: |
+    - Whats the weather?
+    - Will it rain tomorrow?
+    - When will it rain?
+
+- intent: take a screenshot
+  examples: |
+    - take a screenshot 
+    - capture the screen
+    

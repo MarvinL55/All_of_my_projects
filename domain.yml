@@ -1,0 +1,14 @@
+intents:
+  - hi
+  - greet
+  - goodbye
+  - weather
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you?"
+  utter_goodbye:
+    - text: "Goodbye! Take care."
+  utter_weather:
+    - text: "The weather today is sunny."
+

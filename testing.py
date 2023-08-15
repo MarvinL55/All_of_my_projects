@@ -1,0 +1,2 @@
+import pandas_datareader
+import pyttsx3

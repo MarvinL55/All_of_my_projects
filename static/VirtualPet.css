@@ -1,0 +1,38 @@
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-color: #f0f0f0;
+}
+
+#petContainer{
+position: relative
+}
+
+.pet{
+width: 100px;
+height: 100px;
+background-color: #ff9900;
+border-radius: 50%;
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%)
+transition: bottom 0.3s;
+}
+
+.pet-idle{
+bottom: 0;
+}
+
+.pet-active{
+animation: playAnimation 1s infinite;
+}
+
+@keyframes playAnimation{
+0% {bottom: 0;}
+50% {bottom: 30px;}
+100% {bottom: 0;}
+}

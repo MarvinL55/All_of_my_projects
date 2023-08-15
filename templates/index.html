@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy birthday to the worlds most amazing girlfriend</title>
+    <style>
+    	.heart {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: pulse 1.5s ease-in-out infinite;
+  margin: auto;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  position: absolute;
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: rgba(255, 0, 0, 1); /* change opacity to 1 */
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.heart-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  opacity: 8;
+}
+.heart-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 19px; /* add font size */
+}
+
+@keyframes pulse {
+			0% {
+				transform: scale(1);
+			}
+			50% {
+				transform: scale(1.1);
+			}
+			100% {
+				transform: scale(1);
+			}
+		}
+        body {
+            background-color: #8a2be2;
+        }
+
+        /* Style for the slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Style for the slideshow images */
+        .mySlides {
+            display: none;
+        }
+
+      /* The dots/bullets/indicators */
+    .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+ body:before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background-image: url(https://divi.space/wp-content/uploads/2019/02/hearts.png);
+    opacity: 0.5; /* add opacity */
+    animation: falling-hearts 18s linear infinite;
+}
+
+@keyframes falling-hearts {
+   0% {background-position: 0% 30%;}
+}
+
+@-moz-keyframes falling-hearts {
+   0% {background-position: 0% 30%;}
+}
+
+@-webkit-keyframes falling-hearts {
+   0% {background-position: 0% 30%;}
+}
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+   .quote {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  bottom: 100%;
+  transform: translate(-50%, -50%);
+}
+
+        .quote p:first-of-type {
+            font-size: 54px;
+            font-style: italic;
+        }
+
+        .quote p:last-of-type {
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+.text-area {
+    width: 35%;
+    height: 500px;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 18px;
+    resize: none;
+    background-color: #f2f2f2; /* Light gray color */
+}
+
+.star-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.star-btn:hover {
+    background-color: #0066ff;
+}
+
+ .heart-container {
+      clear: both;
+    }
+
+     .send-btn {
+            display: block; /* make the button a block element */
+            margin: 20px auto 0; /* center the button */
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            background-color: #0066ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .send-btn:hover {
+            background-color: #0052cc;
+        }
+
+.countdown-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+</style>
+
+</head>
+<body>
+<h1>
+    <center>Happy birthday to the worlds most amazing girlfriend</center>
+</h1>
+
+<div class="content">
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Slideshow images -->
+        <div class="mySlides fade">
+            <img src="2C48B000-1C15-4610-8E46-694FF0672741.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="C62CC767-15A6-4508-B71C-3D3EB50139B0.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="E7D99108-A8A9-492D-80FB-B0D816DFD3052.jpg" style="width:100%">
+        </div>
+    </div>
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+
+<div class="quote">
+    <p><span id="quote"></span></p>
+</div>
+
+<div class="other" >
+<p>Mr:</p>
+</div>
+
+<div class="text"style="text-align:right">
+<p>Mrs:</p>
+</div>
+
+
+<div class="text-area-container">
+   <textarea id="text-area-left" class="text-area" rows="30" cols="50" style="resize:none; background-color:  #DFDFDF; margin-top=50;"></textarea>
+   <textarea id="text-area-right" class="text-area" rows="30" cols="50" style="resize:none; background-color: #DFDFD; position:absolute; top: 785px; right: 0;"></textarea>
+
+</div>
+
+
+<div class="heart-container">
+  <div class="heart">
+  </div>
+  <div class="heart-text">
+    <p>E + M</p>
+  </div>
+</div>
+
+<div id="star-btn" class="show-stars" style="position: absolute; top: 0; left: 0; background-color: grey; color: white; padding: 8px 16px; text-align: center; text-decoration: none; display: inline-block; border-radius: 4px; cursor: pointer;">Show stars</div>
+
+<div class="countdown-container">
+    <span id="days"></span> Days
+    <span id="hours"></span> Hours
+    <span id="minutes"></span> Minutes
+    <span id="seconds"></span> Seconds
+</div>
+
+
+<script>
+let slideIndex = 0;
+let timeoutId; // Declare the timeoutId variable
+
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  timeoutId = setTimeout(showSlides, 4000); // Store the timeout ID in the global variable
+}
+function getQuote() {
+    fetch("https://quotes.rest/qod?category=love")
+        .then(response => response.json())
+        .then(data => {
+            const quote = data.contents.quotes[0];
+            // Set the quote and author in the HTML elements
+            document.getElementById("quote").innerHTML = `"${quote.quote}"`;
+            document.getElementById("author").innerHTML = `- ${quote.author}`;
+        })
+        .catch(error => console.error(error));
+}
+
+getQuote(); // Initial call to get a quote
+setInterval(getQuote, 10000); // Call getQuote every 10 seconds
+
+// Get the text areas
+const leftTextArea = document.getElementById('text-area-left');
+const rightTextArea = document.getElementById('text-area-right');
+
+// Load the saved text from localStorage
+leftTextArea.value = localStorage.getItem('leftTextArea');
+rightTextArea.value = localStorage.getItem('rightTextArea');
+
+// Save the text to localStorage whenever it changes
+leftTextArea.addEventListener('input', () => {
+  localStorage.setItem('leftTextArea', leftTextArea.value);
+});
+rightTextArea.addEventListener('input', () => {
+  localStorage.setItem('rightTextArea', rightTextArea.value);
+});
+
+ // Get the button element
+const starBtn = document.getElementById('star-btn');
+
+// Initialize the clicked variable
+let clicked = false;
+
+// Add an event listener to the button
+starBtn.addEventListener('click', () => {
+  // Get the body element
+  const body = document.body;
+
+  if (!clicked) {
+    // Remove text areas
+    leftTextArea.style.display = 'none';
+    rightTextArea.style.display = 'none';
+
+    // Reset text area values
+    leftTextArea.value = '';
+    rightTextArea.value = '';
+
+    // Change the background color to black
+    body.style.backgroundColor = 'black';
+
+    // Create a canvas element
+    const canvas = document.createElement('canvas');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    canvas.style.position = 'absolute';
+    canvas.style.top = '0';
+    canvas.style.left = '0';
+    canvas.style.zIndex = '-1';
+
+    // Add the canvas to the body element
+    body.appendChild(canvas);
+
+    // Create a 2D context for the canvas
+    const context = canvas.getContext('2d');
+
+    // Create stars on the canvas
+    const numStars = 500;
+    const radius = 1;
+    const stars = [];
+
+    for (let i = 0; i < numStars; i++) {
+      stars.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * radius
+      });
+    }
+
+    // Animate the stars
+    function animateStars() {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.fillStyle = 'white';
+      for (let i = 0; i < numStars; i++) {
+        const star = stars[i];
+        context.beginPath();
+        context.arc(star.x, star.y, star.radius, 0, 2 * Math.PI);
+        context.fill();
+      }
+      requestAnimationFrame(animateStars);
+    }
+
+    requestAnimationFrame(animateStars);
+
+    // Update the clicked variable
+    clicked = true;
+  } else {
+   // Remove the canvas
+body.removeChild(body.lastChild);
+
+// Reset the background color
+body.style.backgroundColor = '#8a2be2';
+
+// Restore text areas
+leftTextArea.style.display = 'block';
+rightTextArea.style.display = 'block';
+
+// Load the saved text from localStorage
+leftTextArea.value = localStorage.getItem('leftTextArea');
+rightTextArea.value = localStorage.getItem('rightTextArea');
+
+// Update the clicked variable
+clicked = false;
+
+  }
+});
+
+var countDownDate = new Date("August 2, 2023 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Calculate days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("days").innerHTML = days + " ";
+  document.getElementById("hours").innerHTML = hours + " ";
+  document.getElementById("minutes").innerHTML = minutes + " ";
+  document.getElementById("seconds").innerHTML = seconds + " ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("days").innerHTML = "EXPIRED";
+    document.getElementById("hours").innerHTML = "EXPIRED";
+    document.getElementById("minutes").innerHTML = "EXPIRED";
+    document.getElementById("seconds").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+</script>

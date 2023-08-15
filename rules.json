@@ -1,0 +1,12 @@
+{
+    "hi": "Hello! How can I assist you today?",
+    "how are you": "I'm just a chatbot, but I'm here to help you!",
+    "what's the date": "The current date is [CURRENT_DATE]",
+    "bye": "Goodbye! Have a great day!",
+    "hello": "Hi there how can i help you?",
+    "what day is it": "The current date is [CURRENT_DATE]",
+    "who made you": "Marvin Lewis made me",
+    "what's your purpose": "My purpose is to assist you in anyway i can",
+    "what is your name": "My name is ava",
+    "what can you do": "I'm here to assist you with a wide range of daily tasks and provide support with coding and many other tasks, too."
+}

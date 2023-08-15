@@ -1,0 +1,63 @@
+button {
+ position: absolute;
+ top: 10px;
+ left: 60px;
+ transform: translate(-50%, -50%)
+}
+
+body {
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: lightblue;
+}
+
+.glass-sheet{
+ position: relative:
+ width: 400px;
+ height: 250px;
+ padding: 20px;
+ background-color: rgba(255, 255, 255, 0.8);
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+
+h1 {
+    position: relative;
+    left: 269px;
+    top: -330px;
+}
+
+.goals-container  {
+ margin-top: 50px;
+ width: 600px;
+ height: 150px;
+ max-width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px;
+ background-color: rgba(255, 255, 255, 0.5);
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+
+.goal-text {
+margin-top: -300px;
+margin-right: -430px;
+}
+
+.goal-content {
+   padding: 10px;
+   background-color: rgba(255, 255, 255, 0.8);
+   border-radius: 5px;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   margin-bottom: 10px;
+   width: 430px;
+   height: 100px;
+}
+
+

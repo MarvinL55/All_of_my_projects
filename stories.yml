@@ -1,0 +1,8 @@
+version: "2.0"
+stories:
+  - story: User greets and ask for a screenshot
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: screenshot
+      - action: take a screenshot

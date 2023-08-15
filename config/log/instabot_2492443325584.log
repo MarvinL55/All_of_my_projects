@@ -1,0 +1,14 @@
+2022-09-13 01:57:43,723 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2022-09-13 01:57:43,724 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from C:\Users\marvi\PycharmProjects\pythonProject1\venv\lib\site-packages\instabot\bot\bot.py
+2022-09-13 01:57:43,725 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2022-09-13 01:57:43,928 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [200]>
+2022-09-13 01:57:44,074 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2022-09-13 01:57:44,239 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2022-09-13 01:57:44,365 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/contact_point_prefill/ returned response: <Response [200]>
+2022-09-13 01:57:46,169 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/login/ returned response: <Response [400]>
+2022-09-13 01:57:46,169 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"The password you entered is incorrect. Please try again.","invalid_credentials":true,"exception_name":"UserInvalidCredentials","error_title":"Incorrect password","buttons":[{"title":"OK","action":"dismiss"}],"status":"fail","error_type":"bad_password"}'
+2022-09-13 01:57:46,170 - instabot version: 0.117.0 (api) - ERROR - Request returns 400 error!
+2022-09-13 01:57:46,170 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: The password you entered is incorrect. Please try again.
+2022-09-13 01:57:46,170 - instabot version: 0.117.0 (api) - INFO - Error type: bad_password
+2022-09-13 01:57:46,170 - instabot version: 0.117.0 (api) - ERROR - Failed to login go to instagram and change your password
+2022-09-13 01:57:46,170 - instabot version: 0.117.0 (api) - INFO - Username or password is incorrect.

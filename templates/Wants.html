@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wants</title>
+    <link rel="stylesheet" type="text/css" href="../static/Wants.css">
+</head>
+<body>
+<h2>List a number of things you want feel free to list as much as you want</h2>
+    <div class="container">
+        <form action="/add_wants" method="POST">
+            <label for="item">Enter your wants here: </label>
+            <input id="item" name="item">
+            <button class="submit">submit</button>
+        </form>
+
+        <h3>Items you want:</h3>
+        <ul>
+            {% for item in items %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

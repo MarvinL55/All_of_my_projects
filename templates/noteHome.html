@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Your Notes</h1>
+<ul>
+  {% for note in notes %}
+  <li>
+    <h3>{{ note.title }}</h3>
+    <p> {{ note.content }} </p>
+    <a href="{{ url_for('note_details', note_id=note.id) }}">Views</a>
+    <a href="{{ url_for('edit', note_id=note.id) }}">Edit</a>
+    <a href="{{ url_for('delete', note_id=note.id) }}">Delete</a>
+  </li>
+  {% endfor %}
+</ul>
+<a href="{{ url_for('create_note') }}">Create New Notes</a>
+{% endfor %}
+</body>
+</html>

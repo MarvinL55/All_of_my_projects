@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<!-- event_create.html -->
+<form method="POST" action="{{ url_for('create_event') }}">
+    {{ form.csrf_token }}
+    <label for="{{ form.name.id }}">{{ form.name.label }}</label>
+    <input type="text" id="{{ form.name.id }}" name="{{ form.name.name }}" required>
+    <label for="{{ form.description.id }}">{{ form.description.label }}</label>
+    <textarea id="{{ form.description.id }}" name="{{ form.description.name }}" required></textarea>
+    <label for="{{ form.date.id }}">{{ form.date.label }}</label>
+    <input type="date" id="{{ form.date.id }}" name="{{ form.date.name }}" required>
+    <label for="{{ form.location.id }}">{{ form.location.label }}</label>
+    <input type="text" id="{{ form.location.id }}" name="{{ form.location.name }}" required>
+    <!-- Add other form fields as needed -->
+    <button type="submit">Create Event</button>
+</form>
+
+<!-- event_list.html -->
+{% for event in events %}
+    <h3>{{ event.name }}</h3>
+    <p>{{ event.description }}</p>
+    <p>Date: {{ event.date }}</p>
+    <p>Location: {{ event.location }}</p>
+    <hr>
+{% endfor %}
+
+</html>
