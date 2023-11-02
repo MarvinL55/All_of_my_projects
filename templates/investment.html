@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/investment.css">
+    <title>Investment App</title>
+</head>
+<body>
+    <header>
+        <h1>Trading Bot Monitor</h1>
+    </header>
+    <main class="container">
+        <section>
+            <h2>Bot status</h2>
+            <p>Status: <span id="bot-status">Running</span></p>
+        </section>
+        <section class="performance">
+            <div class="performance-details">
+                <p>Gains: <span id="gains">0.00</span></p>
+                <p>Losses: <span id="losses">0.00</span></p>
+            </div>
+        </section>
+        <section class="trading-data">
+            <h2>Trading Data</h2>
+            <div id="data-container">
+
+            </div>
+        </section>
+    </main>
+    <script src="investment.js"></script>
+</body>
+</html>

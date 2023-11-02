@@ -1,0 +1,80 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and text color */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Style the header with a background color and centered text */
+header {
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    padding: 1em 0;
+}
+
+/* Center the main content and provide some padding */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style individual sections */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Style section headings */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Style performance details */
+.performance-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+/* Style numeric values */
+span {
+    font-weight: bold;
+}
+
+/* Style trading data container */
+#data-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Style individual trading data items */
+#data-container div {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* Add hover effect for trading data items */
+#data-container div:hover {
+    background-color: #e4e4e4;
+    cursor: pointer;
+}
