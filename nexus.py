@@ -37,7 +37,7 @@ import datetime
 import subprocess
 import openai
 
-openai.api_key = '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'
+openai.api_key = 'Your-api-id'
 
 
 pyttsx3.init('sapi5')
@@ -78,7 +78,7 @@ def analyze_sentiment(text):
 
 def wishMe():
     speak("Hello")
-    speak(assname)
+    speak(asname)
 
 def takeCommand():
     r = sr.Recognizer()
@@ -318,6 +318,11 @@ def face_detection():
     cv2.destroyAllWindows()
 
 
+def open_amazon():
+    url = "https://www.amazon.com"
+    webbrowser.open(url)
+    speak("Opening Amazon")
+
 
 def launch_app(application_path):
     os.startfile(application_path)
@@ -352,9 +357,6 @@ if __name__ == '__main__':
         elif "fan" in query:
             speak(cpu_fan())
 
-        elif "what is this song" in query:
-            speak(lyrics())
-
         elif "what are the top stories" in query:
             speak(get_news())
 
@@ -364,7 +366,7 @@ if __name__ == '__main__':
 
         elif "open Amazon" in query:
             speak("opening amazon, happy shopping\n")
-            webbrowser.open("amazon.com")
+            open_amazon()
 
         elif "play music" in query:
             speak("here is music on apple music")
@@ -403,11 +405,11 @@ if __name__ == '__main__':
 
         elif "change my name to" in query:
             query = query.replace("change my name to", "")
-            assname = query
+            asname = query
 
         elif "change name" in query:
             speak("What would you like to call me")
-            assname = takeCommand()
+            asname = takeCommand()
             speak("Thanks for naming me")
 
         elif "take a screenshot" in query:
@@ -416,8 +418,8 @@ if __name__ == '__main__':
 
         elif "what's your name" in query or "what is your name" in query:
             speak("My friends call me")
-            speak(assname)
-            print("My friends call me ", assname)
+            speak(asname)
+            print("My friends call me ", asname)
 
         elif "who made you" in query or "who created you" in query:
             speak("I have been created by Marvin")
@@ -490,7 +492,7 @@ if __name__ == '__main__':
 
             wishMe()
             speak("Ava at your service")
-            speak(assname)
+            speak(asname)
 
         elif "what's the weather" in query:
             speak(weather())
@@ -501,7 +503,7 @@ if __name__ == '__main__':
         elif "good morning " in query:
             speak("A warm " + query)
             speak("How are you")
-            speak(assname)
+            speak(asname)
 
         elif "how are you" in query:
             speak("I'm fine")
